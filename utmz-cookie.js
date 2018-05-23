@@ -54,7 +54,7 @@
       len,
       i;
 
-    if (sessionCookie && referrer.indexOf(thisDomain) > -1) {
+    if (sessionCookie && referringDomain === thisDomain) {
 
       gaParams = null;
       referringInfo = null;
